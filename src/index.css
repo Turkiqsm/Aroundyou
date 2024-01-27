@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.AppBar{
+padding: 2em 1em ;
+max-width: 75vw;
+min-width: 75vw;
+position: sticky;
+}
+.Logo{
+  height: 100%;
+  width: auto;
+  filter: invert(1);
+}
+.LogoContainer{
+height: 2em;
+margin-right: 8px ;
+width: fit-content;
+}

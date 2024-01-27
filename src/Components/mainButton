@@ -1,0 +1,15 @@
+import * as React from 'react';
+import { Button  } from '@mui/material';
+import PropTypes from 'prop-types';
+
+
+export default function mainButton(props) {
+
+    const {text} = props;
+    return (
+        <Button color="secondary">{text} text </Button>
+        );
+}
+    button.prototypes = {
+        text: PropTypes.string,
+      };
