@@ -2,9 +2,9 @@ import ResponsiveAppBar from '../Components/ResponsiveAppBar'
 import { Container, Typography,Box } from '@mui/material';
 import Landing from './Sections/Landing'
 import { Fragment } from 'react';
-import Aboutus from './Sections/Aboutus';
 import ContactUs from './Sections/ContactUs';
 import Competitors from './Sections/Competitors'
+import About from './Sections/About';
 import Theme from '../Assets/theme';
 import Services from './Sections/Services';
 import bigBg from '../Assets/big-bg1.svg'
@@ -76,7 +76,7 @@ function Main() {
                     {(() => {
                     switch(section.url) {
                       case 'AboutUs':
-                        return <Aboutus/>
+                        return <About/>
                       case 'Services':
                         return <Services services={services}/>
                       case 'Competitors':

@@ -4,7 +4,7 @@ import { Box, Container, Typography } from '@mui/material';
 import img from '../../Assets/AboutUsImage.jpg'
 import { Height } from '@mui/icons-material';
 
-function Aboutus() {
+function About() {
     const content = `Saudi Arabia, with its capital city Riyadh, is a captivating
     destination that has been gaining significant attention in recent years.
     Known for its rich cultural heritage, stunning landscapes, and
@@ -31,4 +31,4 @@ function Aboutus() {
         );
     }
 
-export default Aboutus;
+export default About;
