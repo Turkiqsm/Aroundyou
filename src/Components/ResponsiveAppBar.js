@@ -42,7 +42,7 @@ function ResponsiveAppBar(props) {
     <AppBar sx={{
       backdropFilter:'blur(5px)',
       borderRadius: "50px",
-      backgroundColor:'rgba(0,0,0,0.5)',
+      backgroundColor:'rgba(0,0,0,0.4)',
       width:'75vw',
       top:'1em',
       margin:'auto',

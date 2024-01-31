@@ -357,6 +357,8 @@
 	.st351{fill:url(#SVGID_2_);}
 	.st352{fill:#2D2D2D;}
 	.st353{fill:#E6E6E6;}
+	.st354{fill:none;stroke:url(#SVGID_3_);stroke-width:3;stroke-miterlimit:10;}
+	.st355{fill:none;stroke:url(#SVGID_4_);stroke-width:3;stroke-miterlimit:10;}
 </style>
 <g>
 	<g>
@@ -2690,9 +2692,5 @@
 			</g>
 		</g>
 	</g>
-</g>
-<g>
-	<rect x="-212" y="406" class="st352" width="160" height="160"/>
-	<rect x="-212" y="595" class="st353" width="160" height="160"/>
 </g>
 </svg>
