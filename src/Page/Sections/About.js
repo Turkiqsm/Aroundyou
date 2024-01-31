@@ -2,7 +2,6 @@ import { Fragment } from 'react';
 import theme from '../../Assets/theme'
 import { Box, Container, Typography } from '@mui/material';
 import img from '../../Assets/AboutUsImage.jpg'
-import { Height } from '@mui/icons-material';
 
 function About() {
     const content = `Saudi Arabia, with its capital city Riyadh, is a captivating
