@@ -21,7 +21,7 @@ function ContactUs(props) {
                 You can contact us via E-mail
                 </Typography>
             </Box>      */}
-            <Box sx={{width:'100%',backgroundColor:'#fff',borderRadius:'20px',px:'2em',py:'2em'}}>
+            <Box sx={{backgroundColor:'#fff',borderRadius:'20px',px:'2em',py:'2em'}}>
             <Box>
             <Typography color={(Theme.Text.Dark+'a1')} variant='subtitle1'>
                 If you Have any quastions, or for more information,

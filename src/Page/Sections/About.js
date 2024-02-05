@@ -13,7 +13,7 @@ function About() {
     transformation under the Vision 2030 plan, spearheaded by Crown
     Prince Mohammed bin Salman. This ambitious initiative aims to
     diversify the economy, boost tourism, and enhance the quality of life
-    for both residents and visitors.`
+    for both residents and visitors.` 
 
     return(
         <Fragment>

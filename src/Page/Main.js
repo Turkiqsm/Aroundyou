@@ -62,7 +62,7 @@ function Main() {
       
     return (
         <Fragment>
-            <Box sx={{minWidth:'100%',position:'absolute',right:0,top:0,zIndex:-999,opacity:0.4}}>
+            <Box sx={{minWidth:{md:'100%',xs:'180%'},position:'absolute',right:0,top:0,zIndex:-999,opacity:0.4}}>
             <img src={bigBg} ></img>
             </Box>
         <ResponsiveAppBar sections={sections}/>
