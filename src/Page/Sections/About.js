@@ -17,13 +17,13 @@ function About() {
 
     return(
         <Fragment>
-        <Box sx={{display:'flex',mt:'2em'}}>
-            <Box sx={{Width:'50%',display:'flex',alignItems:'center',flexDirection:'column'}}>
+        <Box sx={{display:'flex',flexDirection:{md:'row',xs:'column-reverse'},mt:'2em',}}>
+            <Box sx={{width:{md:'50%',xs:'100%'},display:'flex',alignItems:'center',flexDirection:'column'}}>
             <Typography variant='body1' sx={{color:`${theme.Text.Dark}`,marginBottom:'2em'}}>{content}</Typography>
             <Typography variant='body1' sx={{color:`${theme.Text.Dark}`}}>{subcontent}</Typography>
             </Box>     
-            <Box sx={{Width:'50%',display:'flex',justifyContent:'end'}}>
-            <img style={{maxWidth:'80%', borderRadius:'20px'}}  src={img}></img>
+            <Box sx={{width:{md:'50%',xs:'100%'},display:'flex',justifyContent:'flex-end'}}>
+            <img className='Aboutimage'  src={img}></img>
             </Box>     
         </Box>
         </Fragment>

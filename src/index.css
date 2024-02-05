@@ -27,3 +27,20 @@ height: 2em;
 margin-right: 8px ;
 width: fit-content;
 }
+.Aboutimage{
+border-radius: 20px;
+}
+@media screen and (min-width: 600px) {
+  .Aboutimage{
+    max-width: 80%;
+
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .Aboutimage{
+    max-width: 100%;
+    margin-bottom: 2em  ;
+  }
+}
