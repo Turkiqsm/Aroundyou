@@ -11,7 +11,7 @@ function Landing() {
     return(
         // <Box sx={{ height:'90vh', justifyContent:'center' ,display: 'flex',backgroundImage:`url(${bgImage})`,backgroundSize:'cover',backgroundPositionY:'-20em' }}>
         <Container>
-        <Box sx={{ height:{md:'90vh',xs:'50vh'}, mt:{md:'15em',xs:'20em'}}}>
+        <Box sx={{ height:{md:'90vh',xs:'50vh'}, mt:{md:'15em',xs:'45vh'}}}>
         <Fade timeout={2000} in={true}>
         <Box sx={{minWidth:{md:'60%',xs:'90%'},position:'absolute',right:0,top:{md:'10vh',xs:'4vh'}}}>
                 <img src={bgImage} ></img>
