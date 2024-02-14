@@ -4,7 +4,7 @@ import { Box, Container,Button ,Typography } from '@mui/material';
 import bgImage from '../../Assets/Illu.svg';
 import MainButton from '../../Components/MainButton';
 import Fade from '@mui/material/Fade';
-
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 function Landing() {
 
@@ -32,7 +32,11 @@ function Landing() {
                 ambitious development projects..        
                 </Typography>
                 <Box sx={{display:'flex', width:'100%', justifyContent:{md:'flex-start',xs:'center'},right:'2px',marginY:'2em'}}>
-                <MainButton text="Contact us now"/>
+                <AnchorLink 
+                offset='300' 
+                href={'#ContactUs'}>
+                <MainButton key={'ContactUs'} text="Contact us now"/>
+          </AnchorLink>
                 </Box>
             </Box> 
         </Box>

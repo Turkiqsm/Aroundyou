@@ -14,7 +14,7 @@ function createData(name, Typofbusiness, Dutyhour, Vehicle, Services,minOfpeople
     return { name, Typofbusiness, Dutyhour, Vehicle, Services,minOfpeople };
   }
   const rows = [
-    createData('Around You', 'B2B', 'Free', 'Varaiery','Chauffeur and TourGuid',0),
+    createData('Around You', 'B2B', 'Free', 'Variety','Chauffeur and TourGuid',0),
     createData('Other companies', 'B2C', 'Schedualed', 'Limited', 'Chauffeur',1),
   ];
 function Competitors(props) {

@@ -39,3 +39,13 @@
 html{
   background-color: rgb(230, 230, 230);
 }
+.navElemnt{
+  text-decoration: none;
+}
+.interaction{
+  transition: all .3s ease-out !important;
+}
+.interaction:hover{
+  transform: translate(0px,-10px);
+  box-shadow: #282c3433 0px 16px 10px ;
+}

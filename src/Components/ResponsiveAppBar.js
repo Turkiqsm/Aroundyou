@@ -14,6 +14,9 @@ import IconButton from '@mui/material/IconButton';
 import Slide from '@mui/material/Slide';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import PropTypes from 'prop-types';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+import Theme from '../Assets/theme';
+
 
 
 function ResponsiveAppBar(props) {
@@ -54,19 +57,29 @@ function ResponsiveAppBar(props) {
     >
       <Container sx={{paddingX:{xs:'2em',md:'5em'}}} maxWidth="xl">
         <Toolbar sx={{justifyContent:{xs:'space-between',}}} disableGutters>
-          <div href='/' className='LogoContainer'>
+          <AnchorLink 
+          offset='300' 
+          href={'#landing'}>
+          <div key={'landing'}  className='LogoContainer'>
           <img  src={ALogo} className='Logo'></img>
           </div>
+          </AnchorLink>
           <Box sx={{ flexGrow: 1, display: {xs:'none', md: 'flex' }, ml:2 }}>
           {sections.map((section) => (
+            <AnchorLink
+            offset='100'
+            href={`#${section.url}`}
+            className='navElemnt'
+            >
               <Button
                 key={section}
-                onClick={handleCloseNavMenu}
-                href={`#${section.url}`}
+                // onClick={handleCloseNavMenu}
+                // href={`#${section.url}`}
                 sx={{ my: 2, color: `${theme.Text.Light}`, display: 'block' }}
               >
                 {section.title}
               </Button>
+          </AnchorLink>
             ))
 
              }
@@ -96,9 +109,15 @@ function ResponsiveAppBar(props) {
               onClose={handleCloseUserMenu}
             >
               {sections.map((section) => (
+                <AnchorLink
+                offset='100'
+                href={`#${section.url}`}
+                className='navElemnt'
+                >
                 <MenuItem key={section} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{section.title}</Typography>
+                  <Typography sx={{color:`${Theme.Primary}` }} textAlign="center">{section.title}</Typography>
                 </MenuItem>
+                </AnchorLink>
               ))}
             </Menu>
           </Box>

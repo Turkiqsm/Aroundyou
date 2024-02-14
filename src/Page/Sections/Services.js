@@ -10,7 +10,7 @@ function Services(props) {
     <React.Fragment>
     <Box sx={{display:{md:'flex',sx:'block'},flexWrap:{md:'wrap',sx:'nowrap',justifyContent:'flex-start'}}}>
     {services.map((service)=>(
-    <ServiceCard service={service}/>
+    <ServiceCard key={service} service={service}/>
     ))}
     </Box>
     </React.Fragment>

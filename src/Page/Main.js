@@ -11,13 +11,13 @@ import bigBg from '../Assets/big-bg1.svg'
 
 function Main() {
     // console.log(theme)
-    var sectionStyle = {};
+    const email = 'around@You.com';
     const sections = [
         { title: 'About us', url: 'AboutUs' },
         // { title: 'Services and Activities', url: 'ServicesAndActivities' },
         { title: 'Services', url: 'Services' },
         { title: 'Visitors', url: 'RiyadhVisitors' },
-        { title: 'Competitors', url: 'Competitors' },
+        // { title: 'Competitors', url: 'Competitors' },
         { title: 'Contact Us', url: 'ContactUs' },
       ];
     const services = [
@@ -29,35 +29,38 @@ function Main() {
         areas.` },
         // { title: 'Services and Activities', url: 'ServicesAndActivities' },
         { title: 'Transportation', 
-        content: `Design and offer curated tour
-        package that highlight the best
-        attractions and experiences in
-        Riyadh and its surrounding
-        areas.` },
+        content: `Provide transportation options
+        for your clients, including airport
+        pick-up, drop off with tour guid
+        or without “ chauffeur”
+        .` },
         { title: 'Accommodation', 
-        content: `Design and offer curated tour
-        package that highlight the best
-        attractions and experiences in
-        Riyadh and its surrounding
-        areas.` },
+        content: `Assist clients in finding and
+        booking suitable accommodations
+        in Riyadh, ranging from luxury
+        hotels and resorts to budget-
+        friendly options.` },
         { title: 'Cultural Experiences', 
-        content: `Design and offer curated tour
-        package that highlight the best
-        attractions and experiences in
-        Riyadh and its surrounding
-        areas.` },
+        content: `Organize immersive cultural
+        experiences that allow visitors
+        to engage with the local culture
+        and traditions. This can include
+        arranging visits to traditional
+        markets, heritage sites.` },
         { title: 'Culinary Experiences', 
-        content: `Design and offer curated tour
-        package that highlight the best
-        attractions and experiences in
-        Riyadh and its surrounding
-        areas.` },
+        content: `Showcase the
+        rich culinary heritage of Saudi Arabia
+        by organizing food tours, or dining
+        experiences at traditional restaurants.
+        Highlight local specialties and
+        introduce clients to the diverse flavors
+        of Saudi Arabian cuisine.` },
       ];
      function darkSection(section){
-      return section.url === 'Competitors'?{backgroundColor:`${Theme.Primary}`}:{backgroundColor:`${Theme.Secondary}`};
+      return section.url === 'RiyadhVisitors'?{backgroundColor:`${Theme.Primary}`}:{backgroundColor:`${Theme.Secondary}`};
       }
      function lightText(section){
-      return section.url === 'Competitors'?{color:`${Theme.Secondary}`}:{color:`${Theme.Primary}`};
+      return section.url === 'RiyadhVisitors'?{color:`${Theme.Secondary}`}:{color:`${Theme.Primary}`};
       }
       
     return (
@@ -66,7 +69,9 @@ function Main() {
             <img src={bigBg} ></img>
             </Box>
         <ResponsiveAppBar sections={sections}/>
+        <section id='landing'>
         <Landing/>
+        </section>
             {sections.map((section)=>(
                 <section style={darkSection(section)} id={section.url}>
                 <Container sx={{paddingY:"4em"}}>                    
@@ -79,10 +84,8 @@ function Main() {
                         return <About/>
                       case 'Services':
                         return <Services services={services}/>
-                      case 'Competitors':
-                        return <Competitors/>
                       case 'ContactUs':
-                        return <ContactUs/>
+                        return <ContactUs email={email}/>
                       {/* case 'HowDoWeWork':
                         return <HowDoWeWork/>
                       case 'ContactUs':

@@ -10,7 +10,7 @@ import MainButton from '../../Components/MainButton';
 
 
 function ContactUs(props) {
-  const {text} = props;
+  const {email} = props;
 
   return (
     <React.Fragment>
@@ -33,7 +33,7 @@ function ContactUs(props) {
             <Typography fontWeight={500} variant='body1'>
                 </Typography>
                 <Box sx={{width:'100%',display:'flex',justifyContent:'center',mt:'2em'}}>
-                <MainButton variant='Secondary' text={'Around@You.com'} />
+                <MainButton variant='Secondary' text={email} />
                 </Box>
             </Box>
             </Box>     

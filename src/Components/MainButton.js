@@ -39,12 +39,17 @@ const SecondaryButton = styled(Button)({
 
 function MainButton(props) {
   const {text,variant} = props;
+  
+  function CopyText (){
+    navigator.clipboard.writeText(text);
 
-  return (
+    // Alert the copied text
+    alert("Copied the text: " + text);
+  }
+  return (  
     <React.Fragment>
-    {/* <Button  variant="contained" sx={{backgroundColor:`${Theme.Accent}`,boxShadow:'none'}}>{text}</Button> */}
     { variant == 'Secondary'?    
-    <SecondaryButton  variant="contained">{text} <ContentCopy sx={{ml:'0.8em',maxWidth:'0.8em'}}></ContentCopy> </SecondaryButton> :    
+    <SecondaryButton onClick={CopyText}  variant="contained">{text} <ContentCopy sx={{ml:'0.8em',maxWidth:'0.8em'}}></ContentCopy> </SecondaryButton> :    
     <PrimaryButton  variant="contained">{text} </PrimaryButton>
 
 }
