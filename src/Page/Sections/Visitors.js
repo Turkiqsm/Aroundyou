@@ -14,7 +14,7 @@ function Visitors(props) {
 ];
   return (  
     <React.Fragment>
-    <Container sx={{display:'flex',flexDirection:{xs:'column'}}}>
+    <Container sx={{display:'flex',flexDirection:{md:'row',xs:'column'}}}>
     <Box sx={{width:{md:'40%',xs:'100%'},mb:{xs:'3rem'}}}>
     <img src={map}></img>
     </Box>
@@ -32,18 +32,6 @@ function Visitors(props) {
         </Typography>
         </Box>
     ))}
-    {/* <Typography sx={{color:`${Theme.Secondary}`}}>
-    2021 - visitors : 1.2 million
-    Spending : 7.47 billion SAR
-    </Typography>
-    <Typography sx={{color:`${Theme.Secondary}`}}>
-    2022 - visitors: +3 million
-    Spending : +18 billion SAR
-    </Typography>
-    <Typography sx={{color:`${Theme.Secondary}`}}>
-    2023 - first Q - visitors: +5 million
-    Spending : +25 billion  
-    </Typography> */}
     </Box>
     </Container>    
     </React.Fragment>

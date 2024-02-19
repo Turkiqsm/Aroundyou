@@ -1,4 +1,5 @@
 import ResponsiveAppBar from '../Components/ResponsiveAppBar'
+import Footer from '../Components/Footer'
 import { Container, Typography,Box } from '@mui/material';
 import Landing from './Sections/Landing'
 import { Fragment } from 'react';
@@ -8,6 +9,7 @@ import About from './Sections/About';
 import Theme from '../Assets/theme';
 import Services from './Sections/Services';
 import Visitors from './Sections/Visitors'
+import Partners from './Sections/Partners'
 import bigBg from '../Assets/big-bg1.svg'
 
 function Main() {
@@ -18,7 +20,7 @@ function Main() {
         // { title: 'Services and Activities', url: 'ServicesAndActivities' },
         { title: 'Services', url: 'Services' },
         { title: 'Visitors', url: 'RiyadhVisitors' },
-        // { title: 'Competitors', url: 'Competitors' },
+        { title: 'Partners', url: 'Partners' },
         { title: 'Contact Us', url: 'ContactUs' },
       ];
     const services = [
@@ -89,6 +91,8 @@ function Main() {
                         return <ContactUs email={email}/>
                       case 'RiyadhVisitors':
                         return <Visitors/>
+                      case 'Partners':
+                        return <Partners/>
                       {/* case 'HowDoWeWork':
                         return <HowDoWeWork/>
                       case 'ContactUs':
@@ -99,6 +103,7 @@ function Main() {
                 </Container>
                 </section>
             ))}
+            <Footer/>
         </Fragment>
     );
   }
