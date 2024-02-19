@@ -24,11 +24,11 @@ function ContactUs(props) {
             <Box sx={{backgroundColor:'#fff',borderRadius:'20px',px:'2em',py:'2em'}}>
             <Box>
             <Typography color={(Theme.Text.Dark+'a1')} variant='subtitle1'>
-                If you Have any quastions, or for more information,
+                If you Have any inquiries, or for more information,
                 You can contact us via E-mail
                 </Typography>
             <Typography color={(Theme.Text.Dark+'a1')} variant='subtitle2'>
-                Please mention <strong>Time period</strong> and <strong>Date</strong> for those who want to book a tour
+                Please mention <strong>period</strong> and <strong>Date</strong> for those who want to book a serves
                 </Typography>
             <Typography fontWeight={500} variant='body1'>
                 </Typography>

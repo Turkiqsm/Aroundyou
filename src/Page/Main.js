@@ -7,11 +7,12 @@ import Competitors from './Sections/Competitors'
 import About from './Sections/About';
 import Theme from '../Assets/theme';
 import Services from './Sections/Services';
+import Visitors from './Sections/Visitors'
 import bigBg from '../Assets/big-bg1.svg'
 
 function Main() {
     // console.log(theme)
-    const email = 'around@You.com';
+    const email = 'Aroundyou.ksa@gmail.com';
     const sections = [
         { title: 'About us', url: 'AboutUs' },
         // { title: 'Services and Activities', url: 'ServicesAndActivities' },
@@ -86,6 +87,8 @@ function Main() {
                         return <Services services={services}/>
                       case 'ContactUs':
                         return <ContactUs email={email}/>
+                      case 'RiyadhVisitors':
+                        return <Visitors/>
                       {/* case 'HowDoWeWork':
                         return <HowDoWeWork/>
                       case 'ContactUs':
