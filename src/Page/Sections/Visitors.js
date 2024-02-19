@@ -14,13 +14,13 @@ function Visitors(props) {
 ];
   return (  
     <React.Fragment>
-    <Container sx={{display:'flex'}}>
-    <Box sx={{width:'40%'}}>
+    <Container sx={{display:'flex',flexDirection:{xs:'column'}}}>
+    <Box sx={{width:{md:'40%',xs:'100%'},mb:{xs:'3rem'}}}>
     <img src={map}></img>
     </Box>
-    <Box sx={{width:'60%',display:'flex',flexDirection:'column',alignItems:'center'}}>
+    <Box sx={{width:{md:'60%',xs:'100%'},display:'flex',flexDirection:'column',alignItems:'center'}}>
     {content.map((elem)=>(
-        <Box sx={{width:'40%',mb:'1rem',p:'1.3rem',borderRadius:'20px', backgroundColor:`${Theme.PrimaryLight}`}}>
+        <Box sx={{width:{md:'40%',xs:'90%'},mb:'1rem',p:'1.3rem',borderRadius:'20px', backgroundColor:`${Theme.PrimaryLight}`}}>
         <Typography variant='h5' sx={{color:`${Theme.Secondary}`,display:'flex',alignItems:'baseline'}}>
         {elem.year}
         </Typography>
