@@ -28,7 +28,7 @@ function ContactUs(props) {
                 You can contact us via E-mail
                 </Typography>
             <Typography color={(Theme.Text.Dark+'a1')} variant='subtitle2'>
-                Please mention <strong>period</strong> and <strong>Date</strong> for those who want to book a serves
+                Please mention <strong>period</strong> and <strong>Date</strong> for those who want to book a services
                 </Typography>
             <Typography fontWeight={500} variant='body1'>
                 </Typography>
